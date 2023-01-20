@@ -1,0 +1,23 @@
+.example-spacer{
+  flex: 1 1 auto;
+}
+.example-card {
+  min-width: 400px;
+  margin-bottom: 8px;
+    background-color:#c2185cbd
+}
+.float-side{
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.float-side img{
+  border-radius: 20px;
+}
+.color
+{
+  background-color: transparent;
+}
+.item{
+  padding-left: 75px;
+}

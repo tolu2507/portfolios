@@ -1,0 +1,28 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-toolbar class="color">
+      <mat-toolbar-row>
+        <span>My Portfolio App</span>
+      </mat-toolbar-row>
+
+      <mat-card-title-group>
+        <mat-card-title class="float-side">
+          <img mat-card-md-image src="../assets/image3.jpg" alt="tolu">
+          <span>
+            <h2>{{User.surname}}</h2>
+            <h3>{{User.fullname}}</h3>
+            <h4>{{User.stack}}</h4>
+          </span>
+        </mat-card-title>
+        <mat-list>
+          <div matListItemTitle class="item"><h2>{{User.email}}</h2></div>
+          <mat-list-item *ngFor="let detail of Details">
+            <div matListItemTitle>{{detail}}</div>
+          </mat-list-item>
+        </mat-list>
+
+      </mat-card-title-group>
+    </mat-toolbar>
+
+  </mat-card-header>
+</mat-card>

@@ -1,0 +1,106 @@
+<mat-card>
+  <div class="warn">
+    <div class="side">
+      <mat-card class="body">
+        <mat-list class="body">
+          <mat-list-item *ngFor="let detail of CvDetails" class="body">
+            <mat-icon class="bodycolor" matListItemIcon>eject</mat-icon>
+            <div class="body" matListItemTitle>{{detail}}</div>
+          </mat-list-item>
+        </mat-list>
+      </mat-card>
+    </div>
+    <div class="big">
+      <mat-card class="bodycolor">
+        <div class="big-d">
+          <mat-card class="bodycolor">
+            <h3>BIO</h3>
+            <p>
+              My name is Tolulope Bamisile, and i am a mechanical engineering student graduate from the
+              prestegious university
+              of FUTA.<br />I am also a native of ondo state here in Nigeria.<br />I am a very articulate
+              person and always
+              seeing the need for things to be improved on, and always trying to change the world <strong>step
+                at a
+                time</strong>, also i am very inquisitive to see our things works and why they work that way
+              and for this
+              reasons made me fall in love with tech.<br />I fell in love with <strong>technology since i was a
+                little boy
+              </strong>, where i would take my dads old computer and try to pieces it and see what was inside.
+              my curiousity led
+              me to trying to undestand our vehicles move and now i am venturing into our to change the world
+              with this tech
+              one step at a time.<br />i have avery in depth undeggdffdrstanding of the <b>javascript languaguage</b>
+              and all of its
+              syntax and i am also a self taught fullstack devloper with over a year experience.i love
+              learning new thing and
+              fgor this reason it has been easy for me to build softwares and application with my knowledge of
+              programming
+              language.
+              i am also a very good team player with the amount of energy and skills i offer to the team and
+              also moral
+              support.
+            </p>
+          </mat-card>
+          <mat-divider></mat-divider>
+          <mat-card class="bodycolor">
+            <h3>EXPERIENCE AND EDUCATION</h3>
+            <mat-list class="bodycolor">
+              <div class="bodycolor" matListItemTitle class="item">
+                <h4 class="bodycolor">EDUCATION</h4>
+              </div>
+              <mat-list-item *ngFor="let education of Educations">
+                <mat-icon class="bodycolor" matListItemIcon>eject</mat-icon>
+                <div class="bodycolor" matListItemTitle>
+                  {{education.topic}}{{education.text}}{{education.date}}
+                </div>
+              </mat-list-item>
+              <mat-divider></mat-divider>
+            </mat-list>
+            <mat-list class="bodycolor">
+              <div class="bodycolor" matListItemTitle class="item">
+                <h4 class="bodycolor">EDUCATION</h4>
+              </div>
+              <mat-list-item *ngFor="let education of Educations">
+                <mat-icon class="bodycolor" matListItemIcon>eject</mat-icon>
+                <div class="bodycolor" matListItemTitle>
+                  {{education.topic}}{{education.text}}{{education.date}}
+                </div>
+              </mat-list-item>
+            </mat-list>
+          </mat-card>
+          <mat-divider></mat-divider>
+          <mat-card class="bodycolor">
+            <mat-list class="bodycolor">
+              <div class="bodycolor" matListItemTitle class="item">
+                <h4 class="bodycolor">PROFILES</h4>
+              </div>
+              <mat-list-item *ngFor="let biodetail of BioDetails">
+                <mat-icon class="bodycolor" matListItemIcon>eject</mat-icon>
+                <div class="bodycolor link" matListItemTitle>
+                  <a rel="noopener" target="_blank" href={{biodetail.href}}>{{biodetail.text}}</a>
+                </div>
+              </mat-list-item>
+            </mat-list>
+          </mat-card>
+          <mat-divider></mat-divider>
+          <mat-card class="bodycolor">
+            <div>
+              <mat-list class="bodycolor">
+                <div class="bodycolor" matListItemTitle class="item">
+                  <h4 class="bodycolor">SKILLS</h4>
+                </div>
+                <mat-list-item *ngFor="let skill of skills">
+                  <mat-icon class="bodycolor" matListItemIcon>eject</mat-icon>
+                  <div class="bodycolor">
+                    <strong>{{skill}}</strong>
+                  </div>
+                </mat-list-item>
+              </mat-list>
+            </div>
+          </mat-card>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</mat-card>

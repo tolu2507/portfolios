@@ -1,0 +1,30 @@
+.warn{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.side{
+  width: 25%;
+}
+.big {
+  width: 74%;
+}
+.bodycolor{
+    background-color: transparent;
+    color: black;
+}
+.body{
+  background-color: transparent;
+  color: black;
+  height: 50%;
+}
+.big-d{
+  padding: 15px;
+}
+.link a
+{
+  text-decoration: none;
+  color: black;
+  padding: 30rem;
+  background-color: whitesmoke;
+}
